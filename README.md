@@ -16,7 +16,8 @@ Functions.AddBracket('}');
 Functions.AddBracket('}');
 ```
 The Finished output file:
-```
+
+```c#
 using System;
 using System.Linq;
 using System.Collections.Generic;
