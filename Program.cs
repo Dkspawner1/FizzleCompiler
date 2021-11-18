@@ -19,8 +19,9 @@ namespace FizzleCompiler
             Functions.CreateFunction("private", true, "int", "GetAge", null, null, "age", "int age = 18");
             Functions.CreateFunction("private", true, "string", "GetName", null, null, "name", "string name = \"Fizzle\"");
             Functions.CreateFunction("internal", true, "int", "DoubleToInt", new[] { "double" }, new[] { "val" }, "Convert.ToInt32(val);");
-
+            // End class bracket
             Functions.AddBracket('}');
+            // End namespace bracket
             Functions.AddBracket('}');
             File.WriteAllLines(Data.OutputFile, Data.lines);
 
