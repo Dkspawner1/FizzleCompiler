@@ -1,0 +1,16 @@
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.exe
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.deps.json
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.runtimeconfig.json
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.runtimeconfig.dev.json
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.dll
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\ref\FizzleCompiler.dll
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\bin\Debug\net5.0\FizzleCompiler.pdb
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.csproj.AssemblyReference.cache
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.AssemblyInfoInputs.cache
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.AssemblyInfo.cs
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.csproj.CoreCompileInputs.cache
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.dll
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\ref\FizzleCompiler.dll
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.pdb
+C:\Users\Nicho\Desktop\C#\FizzleCompiler\obj\Debug\net5.0\FizzleCompiler.genruntimeconfig.cache
