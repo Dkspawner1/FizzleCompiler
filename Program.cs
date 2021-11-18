@@ -5,8 +5,10 @@ namespace FizzleCompiler
 {
     public class Program
     {
+
         private static void Main(string[] args)
         {
+            // Create a director called output used to create dump files into through the Data class
             Directory.CreateDirectory("Output");
 
             Functions.AddLibraries("using System.Collections.Generic;", "using System.Linq;", "using System;");
