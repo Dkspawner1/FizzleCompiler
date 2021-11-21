@@ -87,6 +87,31 @@ namespace FizzleCompiler
 #nullable disable
         // Allow for partial classes to be complete for example if user wants no parameters 
 #nullable enable
+        public static void CreateLambdaFunction(string accessibilityModifier, bool isStatic, string type, string funcName, string[] variableTypes, string[] variableNames, string returnVariable)
+        {
+            if (!(accessibilityModifier is "private" or "public" or "internal"))
+                throw new Exception("Invalid Modifier");
+            Data.lines.Add($"{accessibilityModifier} {(isStatic ? "static" : String.Empty)} {type} {funcName}(");
+
+
+            if (variableNames is not null)
+            {
+
+                for (int i = 0; i < variableTypes.Length; i++)
+                {
+                    string? vType = variableTypes[i];
+                    string? vName = variableNames[i];
+                    Data.lines[Data.lines.Count - 1] += $"{vType} {vName}";
+                }
+                // add lambda function: 
+                Data.lines[Data.lines.Count - 1] += $") => {returnVariable};";
+            }
+            else
+                Data.lines[Data.lines.Count - 1] += $") => {returnVariable};";
+
+            // Data.lines[Data.lines.Count - 1] += ";";
+        }
+
         public static void CreateFunction(string accessibilityModifier, bool isStatic, string type, string funcName, string[] variableTypes, string[] variableNames, string returnVariable, params string[] Body)
         {
             if (!(accessibilityModifier is "private" or "public" or "internal"))
@@ -107,11 +132,15 @@ namespace FizzleCompiler
                         Data.lines[Data.lines.Count - 1] += ", ";
                 }
             }
+            // Appends the previous line to add )
             Data.lines[Data.lines.Count - 1] += ")";
+
 
             AddBracket('{');
             foreach (var line in Body)
                 Data.lines.Add($"{line};");
+
+            // Adds return functionality 
 
             if (returnVariable is not null && type is not "void")
                 Data.lines.Add($"return {returnVariable};");
@@ -130,6 +159,15 @@ namespace FizzleCompiler
         {
 
         }
+        // User MUST return a correct value for this to work, otherwise it will throw a exception 
+        public static void CreateGlobalVariable()
+        {
 
+        }
+        public static void CreateLocalVariable()
+        {
+
+
+        }
     }
 }

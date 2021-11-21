@@ -19,14 +19,11 @@ namespace Fizzle
             int age = 18;
             return age;
         }
-        private static string GetName()
-        {
-            string name = "Fizzle";
-            return name;
-        }
         internal static int DoubleToInt(double val)
         {
-            return Convert.ToInt32(val); ;
+            return Convert.ToInt32(val);
         }
+        private static string GetName() => Console.ReadLine();
+        private static string GetNameParams(string test) => test;
     }
 }
